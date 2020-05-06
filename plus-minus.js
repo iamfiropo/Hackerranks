@@ -17,8 +17,6 @@ function plusMinus(arr) {
 
 plusMinus([-4, 3, -9, 0, 4, 1])
 
-plusMinus([-4, 3, -9, 0, 4, 1])
-
 function plusMinus(arr) {
   // create a variable to store the array length
   // create 3 variables i.e positiveCount, negativeCount, zeroCount
