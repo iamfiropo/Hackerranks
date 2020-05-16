@@ -10,7 +10,6 @@ function kangaroo(x1, v1, x2, v2) {
   } else if (x1 < x2 && v2 < v1) {
     const xDiff = Math.abs(x1 - x2);
     const vDiff = Math.abs(v1 - v2);
-    console.log(v1 - v2);
     if (xDiff % vDiff == 0) {
       return "YES";
     } else {
