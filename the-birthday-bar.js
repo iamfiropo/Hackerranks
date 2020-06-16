@@ -14,13 +14,14 @@
  */
 function birthday(s, d, m) {
   let counter = 0;
-  let summation = (a, c) => a + c;
+  let summation = (acc, initValue) => acc + initValue;
+ 
   for (let i = 0; i < s.length; i++) {
-    let temp = s.slice(i, m + i);
+    let temp = s.slice(i, i+m);
     if (temp.reduce(summation) === d) {
-      counter++;
+      counter++
     }
   }
-  return counter;
-}
+  return counter
+ }
 birthday([1, 2, 1, 3, 2], 3, 2);
