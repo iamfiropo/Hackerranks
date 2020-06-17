@@ -3,6 +3,9 @@
  * @param {*} n
  * @param {*} k
  * @param {*} ar
+ * register a counter variable
+ * loop through the array, pick each of the value, add it to the subsequent value one by one
+ * return the total number of sums divisible by the divisor k
  */
 function divisibleSumPairs(n, k, ar) {
   let counter = 0;
