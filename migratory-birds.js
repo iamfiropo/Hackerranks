@@ -48,3 +48,23 @@ function migratoryBirds(arr) {
   }
   return Math.min(...highestFrequentBird);
 }
+
+/**
+ *
+ * @param {*} arr
+ * second approach, short but scalable...it's very slow
+ */
+function migratoryBirds(arr) {
+  let occurence = 0;
+  let counter = 1;
+  let type = 0;
+  arr.sort();
+  for (let i = 0; i < arr.length; i++) {
+    occurence = arr.lastIndexOf(arr[i]) - arr.indexOf(arr[i]) + 1;
+    if (occurence > counter) {
+      counter = occurence;
+      type = arr[i];
+    }
+  }
+  return type;
+}
