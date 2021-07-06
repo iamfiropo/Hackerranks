@@ -24,3 +24,21 @@ function sockMerchant(n, ar) {
 
   return count;
 }
+
+function sockMerchant(n, ar) {
+  // Write your code here
+
+  let count = 0;
+  let map = {};
+
+  for (let i = 0; i < ar.length; i++) {
+    if (!(ar[i] in map)) {
+      map[ar[i]] = true;
+    } else {
+      delete map[ar[i]];
+      ++count;
+    }
+  }
+
+  return count;
+}
